@@ -18,12 +18,16 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
-    
+
 }
 
 .header .first {
     background-color: transparent;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    order: 9999999999999;
 }
 
 .container {
@@ -347,7 +351,9 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-    
+    .header .first {
+        position: relative;
+    }
     
     .header .second .content-second p.p-2 {
         width: 100%;
