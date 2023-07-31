@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+}
+
+
+/* Start Header */
+
+.header {
+    background-color: white;
+    background-image:linear-gradient(rgba(0,0,0,.4) , rgba(0,0,0,.4)) , url(../images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+.header .first {
+    background-color: transparent;
+
+}
+
+.container {
+    padding: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  transparent;
+}
+.container .logo {
+    width: 200px;
+}
+
+.container .links ul {
+    display: flex;
+}
+
+.container .links ul li {
+    list-style-type: none;
+
+}
+.container .links ul li a {
+    text-decoration: none;
+    margin-left: 35px;
+    color: #D0CCC6;
+    display: block;
+    transition: all 0.5s;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.container .links ul li a:hover  {
+    color: tan;
+}
+.header .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+.header .second .content-second {
+    text-align: center;
+}
+.header .second .content-second p.p-1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    color: #E8E6E3;
+}
+.header .second .content-second h1 {
+    font-size: 76px;
+    margin-bottom: 18px;
+    line-height: 91.2px;
+    color: #E8E6E3;
+}
+.header .second .content-second p.p-2 {
+    font-size: 22px;
+    margin:10px 0px 20px;
+    line-height: 44.64px;
+    color: #E8E6E3;
+    width: 680px;
+}
+.header .second .content-second .btn {
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.header .second .content-second .btn1 {
+    margin-right: 10px;
+    background-color: tan;
+    transition: all 0.5s;
+}
+.header .second .content-second .btn2 {
+    background-color: transparent;
+    transition: all 0.5s;
+
+}
+.header .second .content-second .btn1:hover ,
+.header .second .content-second .btn2:hover {
+    background-color: black;
+}
+/* End Header */
+
+/* Start About */
+.about {
+    padding: 40px 0;
+}
+.about .about-container .left-side  { 
+    width: 40%;
+}
+.about .about-container .right-side-about {
+    width: 50%;
+}
+.about .about-container .left-side img{ 
+    width: 100%;
+}
+
+.about .about-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.about .about-container .right-side-about h2 {
+    font-size:32px ;
+    margin-bottom: 25px;
+    line-height: 44px;
+    color:#CAC5BE ;
+}
+.about .about-container .right-side-about p {
+    font-size:17px ;
+    line-height: 32px;
+    color:#A69F93;
+    margin-bottom: 10px;
+}
+.icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid tan;
+}
+
+.icons .icon-1 {
+    display: flex;
+    
+}
+.icons .icon-1 p {
+    margin-left: 10px;
+}
+.icons .icon-1:not(:last-child) {
+    margin-bottom: 15px;
+} 
+
+/* End About */
+
+/* Start Location */
+.location {
+    padding: 40px 0;
+    background-color: #ddd;
+}
+.location .location-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.location .left-side  { 
+    width: 40%;
+}
+.location .right-side {
+    width: 50%;
+}
+.location .right-side img{ 
+    width: 100%;
+}
+.location .location-container .left-side h2 {
+    font-size:32px ;
+    margin-bottom: 25px;
+    line-height: 44px;
+    color:#CAC5BE ;
+}
+.location .location-container .left-side p {
+    font-size:17px ;
+    line-height: 32px;
+    color:#A69F93;
+    margin-bottom: 10px;
+}
+
+/* End Location */
+
+
+/* Start Gallery */
+.gallery {
+    padding: 40px 0;
+    text-align: center;
+}
+.gallery h3 {
+    color: #CAC5BE;
+    line-height: 42px;
+    font-size: 30px;
+}
+.gallery p.p-3 {
+    color: #9D9488;
+    line-height: 32px;
+    font-size: 17px;
+    margin: 25px 0;
+}
+.gallery .gallery-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+    gap: 10px;
+}
+.gallery .gallery-container .card img {
+    width: 90%;
+}
+.gallery .gallery-container .card .card-content {
+    padding: 20px;
+}
+.gallery .gallery-container .card .card-content h4 {
+    font-size:  22px;
+    color: #CAC5BE ;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.gallery .gallery-container .card .card-content p {
+    font-size:  16px;
+    color: #A69F93 ;
+    line-height: 30px;
+}
+/* End Gallery */
+
+/* Start Contact */
+.contact {
+    padding: 40px 0;
+    background-color: #ddd;
+
+}
+.contact .contact-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.contact .contact-container .left {
+    width: 40%;
+}
+
+.contact .contact-container .left h2 {
+    color: #CAC5BE;
+    font-size:32px ;
+    line-height: 44px ;
+    margin-bottom: 25px;
+}
+.contact .contact-container .left p.p-4 {
+    color: #A69F93;
+    font-size:17px ;
+    line-height: 31px ;
+    margin-bottom: 25px;
+}
+.contact .contact-container .left p.p-5 {
+    color: #A69F93;
+    font-size:17px ;
+    margin-bottom: 25px;
+}
+.contact .contact-container .rightt-side {
+    width: 50%;
+}
+
+
+.contact .contact-container .left .icons p {
+    font-size:17px ;
+    line-height: 32px;
+    color:#A69F93;
+}
+
+/* End Contact */
+
+/* Start Footer */
+.footer {
+    background-color: #26292B;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer img {
+    margin-bottom: 30px;
+    width: 250px ;
+}
+.footer p {
+    color: #9D9488;
+    font-size: 15x;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.footer .links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E8E6E3;
+    margin-right: 10px ;
+    cursor: pointer;
+}
+.footer .links .facebook,
+.footer .links .google,
+.footer .links .twitter,
+.footer .links .linkedin {
+    transition: all 0.5s;
+}
+.footer .links .facebook:hover {
+    background-color: RGB(47, 71, 122);
+}
+.footer .links .google:hover {
+    background-color: RGB(47, 71, 30);
+}
+.footer .links .twitter:hover {
+    background-color: RGB(0, 98, 145);
+}
+.footer .links .linkedin:hover {
+    background-color: RGB(47, 71, 122);
+}
+
+/* End Footer */
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    .header .second .content-second p.p-2 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .header .second .content-second p.p-1 {
+        margin-top: 20px;
+    }
+    .header .second .content-second h1 {
+        font-size: 30px;
+        line-height: 48.2px;
+    }
+
+    .container .links .icon {
+        width: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        
+    }
+
+    .container .links .icon span:nth-child(1) {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 5px;
+    }
+    .container .links .icon span:nth-child(2) {
+        width: 60%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 5px;
+        transition: all 0.5s;
+    }
+    .container .links .icon span:nth-child(3) {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+    }
+
+    .container .links {
+        position: relative;
+    }
+
+    .container .links ul {
+        display: none;
+        position: absolute; 
+        right: 0;
+        width: 200px;
+        background-color: #ddd;
+        top: calc(100% + 15px); 
+
+    }
+    .container .links .icon:hover span:nth-child(2) {
+        width: 100%;
+    }  
+
+
+    .container .links ul::after {
+        content: "";
+        top: -26px;
+        right: 0;
+        position: absolute;
+        border-width: 13px;
+        border-style: solid;
+        border-color:  transparent  transparent #333 transparent;
+    } 
+    .container .links ul li a {
+        padding: 15px; 
+        margin-right: 0;
+    } 
+    .container .links ul li:not(:last-child) a {
+        border-bottom: 2px solid #333;
+    }  
+    .container .links ul li a:hover {
+        padding-left: 25px;
+    } 
+    .container .links:hover ul{
+        display: block; 
+    }
+    .container .links ul li a {
+        margin-left: 0;
+    }
+
+
+} 
+
+@media only screen and (max-width: 767px) {
+    .about .about-container,
+    .location .location-container,
+    .contact .contact-container {
+        flex-direction: column;
+    }
+    .about .about-container .left-side,
+    .about .about-container .right-side-about,
+    .location .left-side,
+    .location .right-side,
+    .contact .contact-container .left,
+    .contact .contact-container .rightt-side   {
+        width: 100%;
+    }
+    .about .about-container .right-side-about h2 {
+        margin-top: 50px;
+    }
+
+    .location .right-side img{ 
+        width: 100%;
+        margin-top: 50px ;
+    }
+    .contact .contact-container .left {
+        margin-bottom: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+    }
+    .header .second .content-second h1 {
+        font-size: 25px;
+        line-height: 20px;
+    }
+}
+@media only screen and (max-width: 426px)  {
+    .container .logo {
+        width: 150px;
+    }
+    .gallery .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
