@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,12 +23,12 @@ body {
 }
 
 .header .first {
-    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: black;
     order: 9999999999999;
+    
 }
 
 .container {
